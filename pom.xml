@@ -13,12 +13,13 @@
 	<modules>
 		<module>fortune-teller-fortune-service</module>
 		<module>fortune-teller-ui</module>
+		<module>fortune-teller-listener</module>
 	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
+		<version>2.0.8.RELEASE</version>
 		<relativePath/>
 	</parent>
 

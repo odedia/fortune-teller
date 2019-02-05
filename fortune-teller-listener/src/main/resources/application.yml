@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: create-drop
+
+ribbon:
+  IsSecure: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

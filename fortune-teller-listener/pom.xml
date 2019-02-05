@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.spring.cloud.samples</groupId>
-	<artifactId>fortune-teller-fortune-service</artifactId>
+	<artifactId>fortune-teller-fortune-listener</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>fortune-teller-fortune-service</name>
-	<description>Fortunes Service</description>
+	<name>fortune-teller-listener</name>
+	<description>Fortunes Listener</description>
 
 	<parent>
 		<groupId>io.spring.cloud.samples</groupId>
@@ -24,26 +24,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.pivotal.spring.cloud</groupId>
-			<artifactId>spring-cloud-services-starter-config-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.pivotal.spring.cloud</groupId>
-			<artifactId>spring-cloud-services-starter-service-registry</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 		<dependency>
@@ -56,19 +36,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.hsqldb</groupId>
-			<artifactId>hsqldb</artifactId>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.1-901-1.jdbc4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
-			<version>2.2.6</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>
