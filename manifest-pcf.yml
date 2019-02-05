@@ -20,6 +20,6 @@ applications:
 - name: fortune-listener
   memory: 1024M
   host: fortunes-listener
-  path: fortune-teller-listener/target/fortune-teller-listener-0.0.1-SNAPSHOT.jar
+  path: fortune-teller-listener/target/fortune-teller-fortune-listener-0.0.1-SNAPSHOT.jar
   services:
   - rabbitmq
